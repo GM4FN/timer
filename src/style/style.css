@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  background-color: rgb(220, 133, 31);
+  color: rgb(52, 51, 48);
+  word-wrap: break-word;
+}
+
+.countdown_position {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.countdown-header_decoration {
+  color: rgb(126, 89, 32);
+}
+
+.countdown-header_decoration:hover {
+  transition: 1s ease;
+  color: rgb(255, 225, 156);
+}
+
+.countdown__wrapper-counter {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(69, 70, 42);
+}
+
+.countdown__days {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  border-radius: 15%;
+}
+
+.countdown__hours {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  border-radius: 15%;
+}
+
+.countdown__minutes {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  border-radius: 15%;
+}
+
+.countdown__seconds {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  border-radius: 15%;
+}
+
+@media (min-width: 479px) {
+  .countdown__wrapper-counter {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 767px) {
+  body {
+    font-size: 24px;
+  }
+
+  .countdown__wrapper-counter {
+    padding-top: 1%;
+    justify-content: space-evenly;
+  }
+
+  .countdown__days,
+  .countdown__hours,
+  .countdown__minutes,
+  .countdown__seconds {
+    border: 2px solid rgba(247, 157, 101, 0.3);
+  }
+
+  .countdown__days:hover,
+  .countdown__hours:hover,
+  .countdown__minutes:hover,
+  .countdown__seconds:hover {
+    color: rgb(255, 225, 156);
+    transition: 0.5s ease;
+    background-color: rgba(247, 157, 101, 0.3);
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 30px;
+  }
+}
