@@ -11,7 +11,7 @@ let countdown = {
       numberSeconds = document.querySelector(".countdown__number-seconds"),
       secondsCounter = Math.ceil(
         Math.abs(
-          new Date(2022, 5, 1, 0, 0, 0).getTime() - new Date().getTime()
+          new Date(2023, 0, 1, 0, 0, 0).getTime() - new Date().getTime()
         ) / 1000
       );
     while (secondsCounter >= 60) {
